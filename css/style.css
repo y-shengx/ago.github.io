@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+/*html{overflow-x:hidden; overflow-y:hidden;}*/
+/*头部菜单开始*/
+header{width:100% ;position:fixed; top:0; left:0; z-index:9; }
+header ul{width:100%; font-size:0; }
+header ul li{width:20%; height:48px; display:inline-block; text-align:center; color:#fff; font:16px/48px "微软雅黑"; display:inline-block;}
+header ul .cur{color:#f60;}
+header ul li:hover{ cursor:pointer;}
+/*头部菜单开始*/
+
+/*左边nav开始*/
+.navBox{width:50px; height:236px; position:fixed; top:50%; right:0; margin-top:-118px; z-index:10;}
+#LeftNav{width:50px; height:200px; position:absolute; top:0; right:0;}
+#LeftNav{ text-align:center;}
+#LeftNav>li{width:10px; height:10px; border-radius:6px; border-radius:6px; border:1px solid #f60; margin:16px 18px;}
+#LeftNav .active{width:10px; height:10px; background:#f60; margin:16px 18px;}
+.navBox img{position:absolute; bottom:0; right:0;}
+/*左边nav开始*/
+
+/*主体部分开始*/
+.content_box{position:relative;width:100%;height:665px;overflow:hidden; z-index:1; }
+#Main{position:absolute; left:0; top:0; width:100%;}
+article{background-size:cover;}
+/*第一页开始*/
+.pageOne{background:url(../images/pic1.jpg) center no-repeat; position:relative;}
+.pageOne ul{ width:620px; height:170px; position:absolute; left:50%; top:50%; margin-left:-310px; margin-top:-80px;}
+.pageOne li.pic1{position:absolute; left:0; top:0;
+-webkit-animation: pic1 2s 1;
+}
+	@-webkit-keyframes pic1{
+		0%{top:-400px; opacity:0;}
+		70%{top:50px; opacity:1;}
+		100%{top:0; opacity:1;}
+		}
+		
+.pageOne li.pic2{position:absolute; right:0; top:0;
+-webkit-animation: pic2 2s 1;
+}
+	@-webkit-keyframes pic2{
+		0%{right:-400px; opacity:0;}
+		100%{right:0; opacity:1;}
+		}
+.pageOne li.line1{width:430px; height:1px; background:#f60; position:absolute; left:0; top:60%;
+-webkit-animation: line1 2s 1;
+}
+	@-webkit-keyframes line1{
+		0%{left:1200px; width:0px; opacity:0;}
+		70%{left:0; width:630px; opacity:0.7;}
+		100%{left:0; width:430px; opacity:1;}
+		}
+.pageOne li.line2{width:45px; height:2px; background:#f60; position:absolute; left:-45px; top:-40px;
+	-webkit-animation: line2 2s 1;
+}
+	@-webkit-keyframes line2{
+		0%{left:-400px; opacity:0;}
+		100%{left:-45px; opacity:1;}
+		}
+.pageOne li.line3{width:2px; height:45px; background:#f60; position:absolute; left:-40px; top:-45px;
+	-webkit-animation: line3 2s 1;
+}
+	@-webkit-keyframes line3{
+		0%{left:-400px; opacity:0;}
+		100%{left:-40px; opacity:1;}
+		}
+.pageOne li.line4{width:45px; height:2px; background:#f60; position:absolute; right:-45px; bottom:-40px;
+	-webkit-animation: line4 2s 1;
+}
+	@-webkit-keyframes line4{
+		0%{right:-400px; opacity:0;}
+		100%{right:-45px; opacity:1;}
+		}
+.pageOne li.line5{width:2px; height:45px; background:#f60; position:absolute;  right:-40px; bottom:-45px;
+	-webkit-animation: line5 2s 1;
+}
+	@-webkit-keyframes line5{
+		0%{right:-400px; opacity:0;}
+		100%{right:-40px; opacity:1;}
+		}
+.pageOne li.pic3{position:absolute; left:0; bottom:0;
+-webkit-animation: pic3 2s 1;
+}
+	@-webkit-keyframes pic3{
+		0%{left:-400px; opacity:0;}
+		100%{left:0; opacity:1;}
+		}
+.pageOne li.pic4{position:absolute; right:30px; bottom:0;
+	-webkit-animation: pic4 2s 1;
+}
+	@-webkit-keyframes pic4{
+		0%{ opacity:0; right:200px; bottom:100px; -webkit-transform:rotate(0deg) scale(2)}
+		100%{opacity:1;  right:30px; bottom:0; -webkit-transform:rotate(360deg) scale(1)}
+		}
+.pageOne li.pic5{position:absolute; right:0; bottom:0;
+-webkit-animation: pic5 2s 1;
+}
+	@-webkit-keyframes pic5{
+		0%{bottom:-200px; opacity:0;}
+		100%{bottom:0; opacity:1;}
+		}
+
+/*第一页结束*/
+
+/*第二页开始*/
+.pageTwo{background:url(../images/pic2.jpg) center no-repeat;}
+/*第二页结束*/
+
+/*第三页开始*/
+.pageThree{background:url(../images/pic3.png) center no-repeat;}
+/*第三页结束*/
+
+/*第四页开始*/
+.pageFour{background:url(../images/pic4.png) center no-repeat;}
+/*第四页结束*/
+
+/*第五页开始*/
+.pageFive{background:url(../images/pic5.png) center no-repeat;}
+/*第五页结束*/
+
+/*主体部分结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
