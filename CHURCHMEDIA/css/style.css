@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 以下是公用样式 */
+body{font-family:Arial, Helvetica, sans-serif;}
+
+/* 以下是头部样式 */
+.header{height:110px; background:#000;}
+.headerMin{width:1250px; height:85px; margin:0 auto; padding-top:25px; position:relative;}
+.headerMin .leftMenu{float:left;}
+.headerMin .leftMenu li{border-right:#343434 1px solid; display:inline-block;} 
+.headerMin .leftMenu a,.headerMin .rightMenu a{display:block; padding:0 30px; font-size:14px; color:#fff; line-height:60px;}
+.headerMin .leftMenu a:hover,.headerMin .rightMenu a:hover{color:#FF0;}
+.headerMin .rightMenu{float:right;} 
+.headerMin .rightMenu li{border-left:#343434 1px solid; display:inline-block;} 
+h1{position:absolute; top:40px; left:450px;}
+
+.shareBox{width:900px; height:30px; margin:0 auto; border-bottom:1px solid #ccc; position:relative;}
+.shareMin{width:100px; height:27px; background:#fff; position:absolute; top:15px; left:400px;}
+.shareMin a{display:inline-block; width:27px; height:26px; margin-left:15px;}
+.shareMin a.shareLeft{background:url(../images/btn_twitter_facebook.png) no-repeat 0 0;}
+.shareMin a.shareLeft:hover{background:url(../images/btn_twitter_facebook.png) no-repeat 0 -26px;} 
+.shareMin a.shareRight{background:url(../images/btn_twitter_facebook.png) no-repeat -27px 0;}
+.shareMin a.shareRight:hover{background:url(../images/btn_twitter_facebook.png) no-repeat -27px -26px;}
+
+/* 以下是index的bannner部分样式 */
+.indexbanner1{padding:65px 0 70px 0;}
+.indexbanner1 h2{width:978px; font:bold 58px Arial, Helvetica, sans-serif; text-align:center; margin:0 auto;}
+.indexbanner1Wenzi{width:800px; margin:10px auto 0;}
+.indexbanner1Wenzi p{font:20px Arial, Helvetica, sans-serif; color:#666; display:inline-block;}
+.indexbanner1Wenzi p.pBold{font:bold 20px; color:#000;}
+.indexbanner2Backg1{height:60px; background:url(../images/bk1.jpg) center;}
+.indexbanner2Backg2{height:568px; background:url(../images/bk2.jpg); position:relative;}
+.indexbanner2contant{width:1250px; margin:0 auto;}
+.indexbanner2Backg3{width:700px; height:568px; padding:0 25px; background:url(../images/%E6%9C%AA%E6%A0%87%E9%A2%98-3.jpg); float:right;}
+.indexbanner2left{width:380px; margin:44px 0 0 40px; float:left;}
+.indexbanner2 h3{font-size:30px; font-weight:bold;}
+.indexbanner2 p{font-size:14px; color:#666; line-height:20px; margin-bottom:24px;}
+.indexbanner2 h5{font-size:16px;}
+.indexbanner2left li.pic1{margin:20px 0; background:url(../images/icon_type.png) no-repeat left center;}
+.indexbanner2left li a{padding:10px 0 10px 35px; display:block; font-weight:bold; color:#000;}
+.indexbanner2left li.pic2{margin:20px 0; background:url(../images/icon_url.png) no-repeat left center;}
+.indexbanner2left li a{padding:10px 0 10px 35px; display:block; font-weight:bold; color:#000;}
+.indexbanner2left li.pic3{margin:20px 0; background:url(../images/icon_details.png) no-repeat left center;}
+.indexbanner2left li a.wenziHui{padding:10px 0 10px 35px; display:block; color:#666;}
+.indexbanner2left li a:hover{color:#f60;}
+.indexbanner3{width:100%; position:absolute; bottom:-75px; text-align:center;}
+.indexbanner3 .indexbanner3Pic a{display:inline-block; margin:0 15px;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic1{width:153px; height:153px; background:url(../images/hover1-1f63e6a0e246b04ae673e0b3957a717a.png) no-repeat 0 0;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic1:hover{background:url(../images/hover1-1f63e6a0e246b04ae673e0b3957a717a.png) no-repeat -153px 0;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic2{width:153px; height:153px; background:url(../images/whites_chapel_thumb-5d88f7a1f71fa0925e1b16f0cbe46109.png) no-repeat 0 0;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic2:hover{background:url(../images/whites_chapel_thumb-5d88f7a1f71fa0925e1b16f0cbe46109.png) no-repeat -153px 0;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic3{width:153px; height:153px; background:url(../images/hover_hr-0f49a62bfae65461f9e1d2020a1e4bd2.png) no-repeat 0 0;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic3:hover{background:url(../images/hover_hr-0f49a62bfae65461f9e1d2020a1e4bd2.png) no-repeat -153px 0;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic4{width:153px; height:153px; background:url(../images/hover_cc-8358c78264fe53e5b99d0e076be22fd3.png) no-repeat 0 0;}
+.indexbanner3 .indexbanner3Pic a.indexbanner3Pic4:hover{background:url(../images/hover_cc-8358c78264fe53e5b99d0e076be22fd3.png) no-repeat -153px 0;}
+
+/* 以下是index的contant部分样式 */
+.indexcontantMin{width:1200px; margin:0 auto;}
+.indexBoxLine{width:900px; height:120px; border-bottom:1px solid #ccc; margin:0 auto;}
+.indexcontantMin li{width:300px; margin:40px 150px 0 0; float:left;}
+.indexcontantMin li.clear{width:0; margin:0; float:none; clear:both;}
+.indexcontantMin h3{font-size:24px; margin:20px 0;}
+.indexcontantMin p{font-size:14px; color:#666; line-height:20px;}
+.indexcontantMin input.anNiu{border:none; width:160px; height:45px; background:#CCC; border:1px solid #999; margin-top:20px;}
+.indexcontantMin input.anNiu:hover{background:#f60;}
+.indexcontantMin input[value]{font-size:14px; font-weight:bold; margin-bottom:110px;}
+.indexcontantMin li.rightNone{margin-right:0;}
+
+/* 以下是signup的bannner部分样式 */
+.signupbanner{}
+.singupbannerMin{width:870px; height:100px; border-bottom:1px solid #CCC; margin:0 auto; padding:65px 0 70px 0;}
+.singupbannerMin h2{width:870px; font:bold 58px Arial, Helvetica, sans-serif; text-align:center;}
+.singupbannerMin p{font-size:16px; color:#666; text-align:center; margin-top:10px;}
+
+/* 以下是signup的contant部分样式 */
+.signupContantMin{width:870px; border-bottom:1px solid #CCC; margin:0 auto; padding-bottom:60px;}
+.signupContantMin h3{font-size:20px; letter-spacing:12px; text-align:center; line-height:120px;}
+.signupContantMin ul{margin:0 auto; width:870px;}
+.signupContantMin ul .signupContantMinBox{width:396px; display:inline-block; margin-bottom:10px; margin-right:74px; }
+.signupContantMin ul .noneRight{margin-right:0;}
+.signupContantMin .signupContantMinBox em{font-size:14px; line-height:18px; font-weight:bold; margin:0 0 6px 0; color:#F30;}
+.signupContantMin .signupContantMinBox input.boxRadius{width:396px; height:44px; border-radius:3px; border:1px solid #CCC;}
+.signupContantMin .signupContantMinBox a{line-height:18px; margin:0 0 6px 0; font-weight:bold;}
+.signupContantMin .signupContantMinBox a.wenziBlock{display:block;}
+.signupContantMin .signupContantMinBox a.ownBack{background:url(../images/xingxing.jpg) no-repeat 80px 4px; font-size:14px; margin:0 0 6px 0;}
+.signupContantMin label{margin-right:10px; font-size:12px;}
+.signupContantMin label input{vertical-align:top; margin-right:10px;}
+.signupContant2
+.signupContant2Min{width:870px; border-bottom:1px solid #CCC; margin:0 auto; padding-bottom:60px;}
+.signupContant2Min h3{font-size:20px; letter-spacing:12px; text-align:center; line-height:120px;}
+.signupContant2Min .signupContant2MinBox{width:870px;}
+.signupContant2Min .signupContant2MinBox p{margin:5px 0; font-size:14px; color:#000;}
+.signupContant2Min ul{margin-right:54px; display:inline-block;}
+.signupContant2Min .noneMargRight{margin-right:0;}
+.signupContant2Min ul li{width:395px; height:32px; background:#CCC; font-size:16px; padding-left:10px; margin-bottom:5px; border-radius:3px;}
+.signupContant2Min ul li input{vertical-align:center; margin:8px 10px 8px 0;}
+.signupContant2Min .signupContant2MinBox2 p{margin:5px 0; font-size:14px; color:#000;}
+.signupContant2Min .signupContant2MinBox2 textarea{width:870px; height:56px; border-radius:3px;}
+.signupContant2Min .signupContant2MinBox2 input[value]{width:120px; height:50px; background:#FF6; margin-top:30px; font-size:16px; font-weight:bold;}
+
+/* 以下是about的bannner部分样式 */
+.aboutBannerMin{width:1250px; margin:0 auto; text-align:center;}
+.aboutBannerMin1 h2{width:920px; font:bold 58px Arial, Helvetica, sans-serif; margin:50px auto 60px;}
+.aboutBannerMin2{width:870px; padding:50px 0 60px 0; margin:0 auto; border-top:1px solid #999;}
+.aboutBannerMin2 h3{font-size:20px; letter-spacing:12px; text-align:center;}
+.aboutBannerMin2 p{width:700px; margin:0 auto; font-size:14px; color:#666; line-height:20px; text-align:justify; margin-top:50px;}
+
+/* 以下是about的bannner部分样式 */
+.aboutContant
+.aboutContantMin{width:1200px; margin:0 auto; padding-bottom:50px;}
+.aboutContantMin h3{width:870px; border-top:1px solid #999; font-size:20px; letter-spacing:12px; text-align:center; margin:0 auto; padding:40px 0;}
+.aboutContantMin li a{display:inline-block;}
+.aboutContantMin li a:hover{background:rgba(0,0,0,0.3)}
+.aboutContantMinBottom{width:1200px; height:108px; background:#FC0; margin-top:50px; position:relative;}
+.aboutContantMinBottom h4{font-size:30px; padding:30px 0 0 35px;}
+.aboutContantMinBottom p{font-size:18px; padding-left:35px;}
+.aboutContantMin input.aboutContantMinAnniu{display:block; border:none; width:130px; height:40px; border-radius:3px; background:#000; position:absolute; right:24px; top:32px;}
+.aboutContantMin input[value]{color:#FFF;}
+.aboutContantMin input.aboutContantMinAnniu:hover{background:#F30; cursor:pointer;}
+
+/* 以下project的banner部分样式 */
+.projectBannerMin{width:1200px; margin:0 auto;}
+.projectBannerMin h3{font-size:20px; letter-spacing:10px; text-align:center; margin:55px 0;}
+.projectBannerMenu{width:1180px; padding:10px 10px; background:#CCC;}
+.projectBannerMenu input{width:180px; height:50px; border:1px solid #999; background:#FFF;}
+.projectBannerMenu input[value]{font-size:14px; font-weight:bold; color:#000;}
+.projectBannerMenu input:hover{background:#FC0;}
+.projectBannerMenu input.cur{background:#FC0;}
+.projectBannerMenu input.menuSearchBox{border-radius:20px; width:360px; height:40px; padding-left:20px; margin-left:240px; background:url(../images/btn_search.png) no-repeat 340px center #FFF;}
+
+/* 以下是project的contant部分样式 */
+.projectContant
+.projectContantMin{width:1200px; margin:0 auto;}
+.projectContantMin h2{margin:0 auto; font:bold 58px Arial, Helvetica, sans-serif; text-align:center; margin-bottom:30px; }
+.projectContantMin .ContantBanner1Script{width:1200px; position:relative;}
+.projectContantMin .ContantBanner1Script .script2{width:46px; height:47px; background:url(../images/btn_next_prev.png) no-repeat -46px 0; position:absolute; right:0; top:10px;}
+.projectContantMin .ContantBanner1Script .script2:hover{background:url(../images/btn_next_prev.png) no-repeat -46px -47px; cursor:pointer;}
+.projectContantMin .projectContantBox1{width:840px; margin:0 auto;}
+.projectContantMin .ContantBox1Left{width:400px; margin-right:110px; display:inline-block; vertical-align:top;}
+.projectContant .projectContantBox1 h5{font-size:14px; font-weight:bold; margin-bottom:10px;}
+.projectContant .ContantBox1Left p{font-size:14px; color:#666; line-height:18px;  margin:10px 0;}
+.projectContant .ContantBox1Right{width:320px; display:inline-block; vertical-align:top;}
+.projectContant ul.boxRightPic li a{padding:10px 0 10px 30px; text-align:center; display:inline-block; color:#000}
+.projectContant ul.boxRightPic li a:hover{color:#f60;}
+.projectContant ul.boxRightPic li p{padding:10px 0 10px 30px; vertical-align:top; color:#666666; font-size:14px; line-height:16px;}
+.projectContant ul.boxRightPic li.box1LeftPic1{color:#000; background:url(../images/icon_type.png) no-repeat left center;}
+.projectContant ul.boxRightPic li.box1LeftPic2{color:#000; background:url(../images/icon_client.png) no-repeat left center;}
+.projectContant ul.boxRightPic li.box1LeftPic3{color:#000; background:url(../images/icon_type.png) no-repeat left center;}
+.projectContant ul.boxRightPic li.box1LeftPic4{color:#000; background:url(../images/icon_category.png) no-repeat left center;}
+.projectContant ul.boxRightPic li.box1LeftPic5{color:#000; background:url(../images/icon_details.png) no-repeat left 10px;}
+.projectContant ul.boxRightPic li.box1LeftPic6{color:#000; background:url(../images/icon_pinterest.png) no-repeat left center;}
+.projectContant .projectContantBox2{width:840px; height:110px; margin:20px auto 0; border-bottom:1px solid #999; }
+.projectContant .projectContantBox2 P{width:420px; font-size:24px; text-align:right; display:inline-block;}
+.projectContant .projectContantBox2 input{width:180px; height:45px; border:1px solid #999; background:#FFCC00; display:inline-block; margin-left:20px;}
+.projectContant .projectContantBox2 input[value]{font-weight:bold; font-size:16px;}
+.projectContant .projectContantBox2 input:hover{background:#f60; cursor:pointer;}
+.projectContant .noneBorder{border-bottom:0;}
+.projectContantMin .ContantBanner2Script{width:1200px; position:relative;}
+.projectContantMin .ContantBanner2Script .script1{width:46px; height:47px; background:url(../images/btn_next_prev.png) no-repeat 0 0; position:absolute; left:0; top:10px;}
+.projectContantMin .ContantBanner2Script .script1:hover{background:url(../images/btn_next_prev.png) no-repeat 0 -47px; cursor:pointer;}
+.projectContantMin .ContantBanner2Script .script2{width:46px; height:47px; background:url(../images/btn_next_prev.png) no-repeat -46px 0; position:absolute; right:0; top:10px;}
+.projectContantMin .ContantBanner2Script .script2:hover{background:url(../images/btn_next_prev.png) no-repeat -46px -47px; cursor:pointer;}
+
+/* 以下是prices的banner部分样式 */
+.pricesbannner{width:1200px; margin:0 auto;}
+.pricesBannerMin{margin:0 auto; margin:30px 0;}
+.pricesBannerMin li.pricesBannerScript1,.pricesBannerMin li.pricesBannerScript2,.pricesBannerMin li.pricesBannerScript3{text-align:center; padding:10px 0; text-align:center; display:inline-block; margin-right:280px;}
+.pricesBannerMin li.pricesBannerScript1:hover a,.pricesBannerMin li.pricesBannerScript2:hover a,.pricesBannerMin li.pricesBannerScript3:hover a{color:#f60;}
+.pricesBannerMin li.noneMargin{margin-right:0;}
+.pricesBannerMin li.pricesBannerScript1{background:url(../images/bg_price_1.jpg) no-repeat left center;}
+.pricesBannerMin li.pricesBannerScript2{background:url(../images/bg_price_2.jpg) no-repeat left center;}
+.pricesBannerMin li.pricesBannerScript3{background:url(../images/bg_price_3.jpg) no-repeat left center;}
+.pricesBannerMin .pricesBannerScriptBox{width:180px; margin-left:30px;}
+.pricesBannerMin .pricesBannerScriptBox a{font:18px/18px "微软雅黑"; display:block; line-height:14px; color:#333333;}
+.pricesBannerMin .pricesBannerScriptBox a.bold{font-size:28px; display:block; line-height:24px; color:#000000;}
+
+/* 以下是prices的contant部分样式 */
+.pricesContant
+.pricesContantMin{width:1200px; margin:0 auto;}
+.pricesContantMinBox1{width:870px; height:90px; margin:0 auto; border-bottom:1px solid #999; border-top:1px solid #999; padding:40px 0;}
+.pricesContant .pricesContantMinBox1 P{width:435px; font-size:24px; text-align:right; display:inline-block;}
+.pricesContant .pricesContantMinBox1 input{width:300px; height:80px; border:1px solid #999; background:#FFCC00; display:inline-block; margin-left:20px;}
+.pricesContant .pricesContantMinBox1 input[value]{font-weight:bold; font-size:24px;}
+.pricesContant .pricesContantMinBox2 h3{font-size:20px; letter-spacing:12px; text-align:center; padding:40px 0;}
+.pricesContant .pricesContantMinBox2 ul{width:320px; margin-right:116px; display:inline-block;}
+.pricesContant .pricesContantMinBox2 ul.noneMarginRight{margin-right:0;}
+.pricesContant .pricesContantMinBox2 li.ContantMinBox2Script{background:url(../images/bg_star.jpg) no-repeat left center; padding:10px 0;}
+.pricesContant .pricesContantMinBox2 li.ContantMinBox2Script a{font-size:14px; color:#333; margin-left:30px;}
+.pricesContant .pricesContantMinBox2 li.ContantMinBox2Script a:hover{color:#f60;}
+
+.pricesContantMin2{background:#CCCCCC; border-top:1px solid #999; border-bottom:1px solid #ccc; padding:40px 0; margin:30px 0;}
+.pricesContantMin2 .contantMin2Box{width:700px; line-height:47px; margin:0 auto; position:relative;}
+.pricesContantMin2 .contantMin2Box h3{font-size:26px; letter-spacing:12px;}
+.pricesContantMin2 .contantMin2Box .scriptRight{width:46px; height:47px; background:url(../images/btn_next_prev.png) no-repeat -46px -47px; position:absolute; right:0; top:0;}
+.pricesContantMin2 .contantMin2Box .scriptRight:hover{background:url(../images/btn_next_prev.png) no-repeat -46px 0; cursor:pointer;}
+
+.pricesContantMin3{width:1200px; margin:0 auto;}
+.pricesContantMinBottom{width:1200px; height:108px; background:#FC0; margin:50px 0; position:relative;}
+.pricesContantMinBottom h4{font-size:30px; padding:30px 0 0 35px;}
+.pricesContantMinBottom p{font-size:18px; padding-left:35px;}
+.pricesContantMinBottom input.pricesContantMinAnniu{display:block; border:none; width:130px; height:40px; border-radius:3px; background:#000; position:absolute; right:24px; top:32px;}
+.pricesContantMinBottom input[value]{color:#FFF;}
+.pricesContantMinBottom input.pricesContantMinAnniu:hover{background:#F30; cursor:pointer;}
+
+.projectContantBox3 h3{width:870px; font-size:20px; letter-spacing:10px; text-align:center; margin:55px 0; line-height:100px; border-top:1px solid #CCC; margin:0 auto;}
+.projectContantBox3 ul li{width:240px; display:inline-block;  vertical-align:top; margin:0 72px 40px 0;}
+.projectContantBox3 ul li.noneMarginRight4{margin-right:0;}
+.projectContantBox3 ul li a{display:block; color:#000; line-height:20px; font-size:10px;}
+.projectContantBox3 ul li a:hover{color:#F60;}
+
+
+/* 以下是services的banner部分样式 */
+.servicesBanner{}
+.servicesBannerMin{width:1200px; margin:0 auto;}
+.servicesBannerMin h2{width:920px; font:bold 50px Arial, Helvetica, sans-serif; margin:50px auto 60px; text-align:center;}
+
+
+/* 以下是services的contant部分样式 */
+.servicesContantMin{width:1200px; margin:0 auto;}
+.servicesContantMin h4{width:870px; margin:0 auto; font-size:20px; letter-spacing:12px; text-align:center; line-height:100px; border-top:1px solid #CCC;}
+.servicesContantMin .ContantMin1Box1{width:1200px; margin:0 auto; padding:20px 0;}
+.servicesContantMin .ContantMin1Box1Left{width:480px; display:inline-block; vertical-align:top; margin-top:100px; margin-right:70px;}
+.servicesContantMin .ContantMin1Box1Left h3{font-size:32px; font-weight:bold; margin-bottom:20px;}
+.servicesContantMin .ContantMin1Box1Left p{font-size:14px; line-height:20px;}
+.servicesContantMin .ContantMin1Box1Left input{width:180px; height:50px; border:1px solid #999; background:#FFF; margin:20px 0;}
+.servicesContantMin .ContantMin1Box1Left input[value]{font-size:14px; font-weight:bold; color:#000;}
+.servicesContantMin .ContantMin1Box1Left input:hover{background:#FC0; cursor:pointer;}
+.servicesContantMin .ContantMin1Box1Left input.cur{background:#FC0;}
+.servicesContantMin .ContantMin1Box1Right a{width:600px; display:inline-block;}
+
+.servicesContantMin2{width:1200px; margin:0 auto;}
+.servicesContantMin2 h4{width:870px; margin:0 auto; font-size:20px; letter-spacing:12px; text-align:center; line-height:100px; border-top:1px solid #CCC;}
+.servicesContantMin2 .ContantMin2Box{margin:10px 0;}
+.servicesContantMin2 .ContantMin2Box p{font-size:24px; line-height:60px;}
+.servicesContantMin2 .ContantMin2Box ul.ContantMin2BoxMenu{width:370px; margin-right:42px; display:inline-block;}
+.servicesContantMin2 .ContantMin2Box ul.noneRightMg{margin-right:0;}
+.servicesContantMin2 .ContantMin2Box li.ContantMin2BoxMenuPic{background:url(../images/icon_check.png) no-repeat left center; padding:5px 0 5px 40px;}
+.servicesContantMin2 .ContantMin2Box a{fonts-size:14px; color:#666;}
+.servicesContantMin2 .ContantMin2Box a:hover{color:#f60;}
+
+.servicesContantMinBottom{width:1200px; height:108px; background:#FC0; margin:50px 0; position:relative;}
+.servicesContantMinBottom h3{font-size:30px; padding:30px 0 0 35px;}
+.servicesContantMinBottom p{font-size:18px; padding-left:35px;}
+.servicesContantMinBottom input.servicesContantMinAnniu{display:block; border:none; width:130px; height:40px; border-radius:3px; background:#000; position:absolute; right:24px; top:32px;}
+.servicesContantMinBottom input[value]{color:#FFF;}
+.servicesContantMinBottom input.servicesContantMinAnniu:hover{background:#F30; cursor:pointer;}
+
+/* 以下是footer部分样式 */
+.footerMin{width:1200px; margin:0 auto;}
+.footerBoxLine{width:900px; height:62px; border-top:10px solid #000; margin:0 auto;}
+.footerMin li{width:270px; margin-right:40px; float:left;}
+.footerMin li.clear{width:0; margin:0; float:none; clear:both;}
+.footerMin h3{font-size:24px; margin:20px 0;}
+.footerMin li p.footerMinOne{font-size:14px; color:#666; line-height:24px;}
+.footerMin input.anNiu{border:none; width:160px; height:45px; background:#CCC; border:1px solid #999; margin-top:20px;}
+.footerMin input.anNiu:hover{background:#f60;}
+.footerMin input[value]{font-size:14px; font-weight:bold; margin-bottom:110px;}
+.footerMin li p,.footerMin h5{font-size:14px; line-height:24px;}
+.footerMin li p{color:#666;}
+.footerMin li p.footerE{font-size:14px; line-height:28px; color:#666; float:left;}
+.footerMin li p.footerEmail{ float:left;}
+.footerMin li a{font-size:14px; line-height:24px; font-weight:bold; color:#000; display:block;}
+.footerMin li a:hover{color:#f60;}
+.footerMin li.footerRightNone{margin-right:0;}
+.footerMin li input.noneStyle1{border:none; width:220px; height:43px; border:2px solid #999; border-right:0; margin-bottom:0; float:left;}
+.footerMin li input.picGo{border:none; width:47px; height:47px; background:url(../images/btn_go.png) no-repeat 0 0; margin-bottom:0; display: float:left; cursor:pointer;}
+.footerMin li .footerMinBoxLine2{height:32px; border-bottom:1px solid #999; margin-bottom:20px;}
+.footerMin .footerMinLaster{}
+.footerMin .footerMinLaster a{display:inline-block; padding-right:5px; border-right:1px solid #999; margin:0;}  
+.footerMin .footerMinLaster a.lasterNoneRight{border-right:0;}

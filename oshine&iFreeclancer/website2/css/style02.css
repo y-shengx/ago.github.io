@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  以下是header样式  */
+header{width:1124px; height:76px; padding:15px 0; margin:0 auto;}
+header h1{float:left;}
+header nav{float:right;}
+header nav ul.menu>li{padding:0 15px; display:inline-block; position:relative;}
+header nav ul.menu>li>a{font:bold 14px/76px "微软雅黑"; color:#333;}
+header nav ul.menu>li>a:hover,header nav ul.menu>li ul.submenu>li>a:hover{color:#e74c3c;}
+header nav ul.menu>li ul.submenu{position:absolute; top:91px; left:0; background:#FFF; z-index:9; display:none;}
+header nav ul.menu>li ul.submenu>li{display:block; width:120px; padding-left:15px}
+header nav ul.menu>li ul.submenu>li>a{font:bold 14px/36px "微软雅黑"; color:#333; display:block;}
+
+/*  以下是banner样式  */
+.banner{width:100%; height:729px; background:url(../images/bg.jpg) no-repeat 0 0; background-size:cover; position:relative;}
+.banner .bannerMin{height:120px;
+	-webkit-animation: bannerMin 2s 1;
+}
+	@-webkit-keyframes bannerMin{
+		0%{opacity:0}
+		20%{opacity:0}
+		100%{top:0; opacity:1}
+		}
+.banner .bannerMin span{width:100%; font:bold 40px/40px "微软雅黑"; color:#e74c3c; position:absolute; top:186px; text-align:center; letter-spacing:4px;}
+.banner .bannerMin p{width:100%; font:bold 48px/48px "微软雅黑"; position:absolute; top:230px; text-align:center; color:#FFF;}
+.banner .bannerMin a{width:100%; font:24px/24px "微软雅黑"; position:absolute; top:320px; text-align:center; color:#FFF;}
+.banner .outbox{width:100%; text-align:center; position:absolute; top:500px;
+	-webkit-animation: outbox 2s 1;
+}
+	@-webkit-keyframes outbox{
+		0%{top:729px; opacity:0}
+		100%{top:500px; opacity:1}
+		}
+.banner .outbox input{width:210px; height:53px; border:1px solid #FFF; border-radius:3px; background:none; cursor:pointer;}
+.banner .outbox input[value]{font:24px/53px Arial, Helvetica, sans-serif; color:#FFF; text-align:center;}
+.banner .outbox input:hover{border:1px solid #e74c3c;}
+.banner .outbox input[value]:hover{color:#e74c3c;}
+
+/*  以下是article one样式  */
+@media(min-width:1600px){
+article.one{width:100%; height:648px; background:url(../images/device.png) no-repeat right center #f7f7f7; padding-top:102px}}
+@media(max-width:1600px){
+article.one{width:100%; height:1060px; background:url(../images/device.png) no-repeat right bottom #f7f7f7; padding-top:102px}}
+article.one section{width:570px; margin-left:210px;}
+article.one section h3{font:bold 36px/36px "微软雅黑"; color:#333; margin-bottom:36px}
+article.one section h4{font:bold 24px/32px "微软雅黑"; color:#444;}
+article.one section span{color:#e74c3c;}
+article.one section p{font:16px/20px Arial, Helvetica, sans-serif; color:#666; margin-top:28px;}
+article.one section input{width:245px; height:50px; background:#e74c3c; border-radius:3px; margin:30px 0 60px;}
+article.one section input[value]{font:20px/50px Arial, Helvetica, sans-serif; color:#FFF; text-align:center}
+
+/*  以下是article two样式  */
+article.two{ text-align:center; padding-bottom:30px;}
+article.two h2{font:bold 36px/36px "微软雅黑"; margin:60px 0;}
+article.two span{color:#e74c3c;}
+article.two>p{font:16px/24px Arial, Helvetica, sans-serif; color:#666; margin-bottom:10px;}
+article.two section>ul li{width:282px; height:282px; display:inline-block; margin:5px; position:relative;}
+article.two section>ul li .bgbox{width:200px; height:200px; background:#3a5169; -webkit-transform:rotate(45deg); margin:40px 0 0 40px;}
+article.two section>ul li:nth-child(2) .bgbox,article.two section>ul li:nth-child(4) .bgbox{background:#e74c3c;}
+article.two section>ul li .wenzi{width:282px; height:120px; position:absolute; top:30px;}
+article.two section>ul li .pic1,article.two section>ul li .pic2,article.two section>ul li .pic3,article.two section>ul li .pic4{width:70px; height:70px; margin:0 auto 15px; border-bottom:1px solid #FFF;}
+article.two section>ul li .pic1{background:url(../images/mobile.png) no-repeat center center;}
+article.two section>ul li .pic2{background:url(../images/setting.png) no-repeat center center;}
+article.two section>ul li .pic3{background:url(../images/hart.png) no-repeat center center;}
+article.two section>ul li .pic4{background:url(../images/lamp.png) no-repeat center center;}
+article.two section>ul>li>.wenzi p{font:bold 14px/24px Arial, Helvetica, sans-serif; color:#FFF}
+article.two section>ul>li>.wenzi a{font:14px/18px Arial, Helvetica, sans-serif; color:#FFF;}
+
+/*  以下是div样式  */
+.backg{width: 100%; background: url(../images/sr-bottom.jpg) no-repeat 0px 0px; background-size: cover; min-height: 349px; position: relative;}
+.backg ul:nth-child(1) li{position: absolute; width: 100%;}
+.backg h3{width: 76%; font-size: 33px; color: #fff; letter-spacing: 2px;  text-align: center; margin: 82px auto 0; text-align: center;}
+.backg h3 span{color: #E74C3C;}
+.backg .bgbox{width:100%; text-align:center; position:absolute; top:60%;}
+.backg span{color:#e74c3c;}
+.backg a{font:20px/20px Arial, Helvetica, sans-serif; color:#FFF;}
+.backg ul:nth-child(3){width:100%; text-align:center; position: absolute; top: 80%;}
+.backg ul:nth-child(3) li{display: inline-block; margin: 0 7px;}
+.backg ul:nth-child(3) li:after{content: ""; font-size: 0; height: 25px; width: 20px; background: url(../images/line1.png) no-repeat -2px 0px; position: absolute; top: 12px;}
+.backg ul:nth-child(3) li:nth-child(4):after{display: none;}
+.backg ul:nth-child(3) li a{display: inline-block; background: url(../images/white.png) 0 0 no-repeat; width: 26px; height: 25px;}
+
+/*  以下是article three样式  */
+article.three{ text-align:center; padding-bottom:30px; background:#f7f7f7; overflow:hidden;}
+article.three>h2{font:bold 36px/36px "微软雅黑"; margin:60px 0;}
+article.three>h2>span{color:#e74c3c;}
+article.three>p{font:16px/24px Arial, Helvetica, sans-serif; color:#666; margin-bottom:10px;}
+article.three ul{font-size:0; margin:20px 0;}
+article.three ul li{display:inline-block; margin:40px 0;}
+article.three input{width:190px; height:50px; background:#e74c3c; border-radius:3px; margin:0 0 60px;}
+article.three input[value]{font:20px/50px Arial, Helvetica, sans-serif; color:#FFF; text-align:center}
+
+/*  以下是article four样式  */
+article.four{ text-align:center; padding-bottom:30px;}
+article.four>h2{font:bold 36px/36px "微软雅黑"; margin:60px 0;}
+article.four>h2>span{color:#e74c3c;}
+article.four>p{font:16px/24px Arial, Helvetica, sans-serif; color:#666; margin-bottom:10px;}
+article.four ul{font-size:0; margin:20px 0;}
+article.four ul li{width:385px; display:inline-block; margin:40px 0; background:#f7f7f7; vertical-align:top;}
+article.four ul li a{display:block; font:12px/14px Arial, Helvetica, sans-serif; color:#333; text-align:left; margin:40px 20px 0;}
+article.four ul li p.big{font:20px/28px Arial, Helvetica, sans-serif; color:#333;}
+article.four ul li p{font:14px/24px Arial, Helvetica, sans-serif; color:#333; text-align:left; margin:0 20px 36px;}
+article.four ul li p span{color:#e74c3c;}
+article.four input{width:190px; height:50px; background:#e74c3c; border-radius:3px; margin:0 0 60px;}
+article.four input[value]{font:20p
+x/50px Arial, Helvetica, sans-serif; color:#FFF; text-align:center}
+
+/*  以下是article five样式  */
+article.five .blue{width:100%; height:64px; background:url(../images/snow.jpg); text-align:center; padding:83px 0;}
+article.five .blue ul li{display:inline-block; margin:0 40px;}
+article.five .orange{width:100%; height:80px; background:#e74c3c; text-align:center;}
+article.five .orange a{display:inline-block; color:#FFF; padding:0 60px; font:16px/80px Arial, Helvetica, sans-serif;}
+
+/*  以下是footer样式  */
+footer .footerMin{width:1124px; padding:80px 0 40px; margin:0 auto; overflow:hidden;}
+footer .footerMin .left{width:500px; overflow:hidden; float:left;}
+footer .footerMin .left h2{float:left; margin-right:20px;}
+footer .footerMin .left p{float:left; font:16px/22px "微软雅黑"; color:#333;}
+footer .footerMin .right{float:right; width:540px;}
+footer .footerMin .right .rightBox{height:25px; border-bottom:1px solid #333; margin-bottom:15px;}
+footer .footerMin .right .rightBox a{font:bold 16px/16px "微软雅黑";}
+footer .footerMin .right ul{width:240px; float:left;}
+footer .footerMin .right ul li a{font:bold 14px/20px Arial, Helvetica, sans-serif; color:#333;}
+footer .footerLine{ text-align:center; width:100%; height:54px; background:#3a5169; font:bold 16px/54px "微软雅黑"; color:#FFF;}
+footer .footerShare{width:100%; height:37px; text-align:center; background:#1c2230; padding:45px 0 46px;}
+footer .footerShare ul{ text-align:center;}
+footer .footerShare ul li{display:inline-block; margin:0 15px; }
+footer .footerShare ul li.iconPic1{width:20px; height:37px; background:url(../images/social-icons.png) no-repeat 0 0; cursor:pointer;}
+footer .footerShare ul li.iconPic2{width:29px; height:37px; background:url(../images/social-icons.png) no-repeat -28px 0; cursor:pointer;}
+footer .footerShare ul li.iconPic3{width:33px; height:37px; background:url(../images/social-icons.png) no-repeat -71px 0; cursor:pointer;}
+footer .footerShare ul li.iconPic4{width:34px; height:37px; background:url(../images/social-icons.png) no-repeat -112px 0; cursor:pointer;}
+footer .footerShare ul li.iconPic5{width:33px; height:37px; background:url(../images/social-icons.png) no-repeat -151px 0; cursor:pointer;}
+footer .footerShare ul li.iconPic6{width:30px; height:37px; background:url(../images/social-icons.png) no-repeat -196px 0; cursor:pointer;}
+footer .footerShare ul li.iconPic1:hover{width:20px; height:37px; background:url(../images/social-iconshr.png) no-repeat 0 0;}
+footer .footerShare ul li.iconPic2:hover{width:29px; height:37px; background:url(../images/social-iconshr.png) no-repeat -28px 0;}
+footer .footerShare ul li.iconPic3:hover{width:33px; height:37px; background:url(../images/social-iconshr.png) no-repeat -71px 0;}
+footer .footerShare ul li.iconPic4:hover{width:34px; height:37px; background:url(../images/social-iconshr.png) no-repeat -112px 0;}
+footer .footerShare ul li.iconPic5:hover{width:33px; height:37px; background:url(../images/social-iconshr.png) no-repeat -151px 0;}
+footer .footerShare ul li.iconPic6:hover{width:30px; height:37px; background:url(../images/social-iconshr.png) no-repeat -196px 0;}
+footer .footerWenzi{width:1124px; margin:0 auto;}
+footer .footerWenzi p,footer .footerWenzi a{float:left; font:14px/58px Arial, Helvetica, sans-serif; color:#333;}
+footer .footerWenzi a{float:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
