@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+html{ overflow:hidden;}
+body{ background:#333;}
+#div1{ position:relative;width:700px; height:400px; background:url(images/image2/1.jpg)  no-repeat;  margin:100px auto; border-radius:20px; box-shadow: 0 0 10px #fff; overflow:hidden;}
+
+#div1 span{ position:absolute;left:0;top:0; background:url(images/image2//0.jpg)  no-repeat; 
+ background-position:0 0; opacity:1;
+}
+
+</style>
+<script>
+
+window.onload = function(){
+	
+	var oDiv = document.getElementById("div1");
+	
+	var R = 4;
+	var C = 7;
+	
+	//创建span 并布局
+	for(var r = 0; r < R; r ++){
+		for(var c = 0; c < C; c ++){
+			
+		     var oSpan = document.createElement("span");
+			 
+			 oSpan.style.width = oDiv.offsetWidth/C + "px";
+			 oSpan.style.height = oDiv.offsetHeight/R + "px";
+			 oDiv.appendChild(oSpan);
+			 oSpan.style.left = oSpan.offsetWidth*c + "px";
+			 oSpan.style.top = oSpan.offsetHeight*r + "px";
+			 
+			 oSpan.style.backgroundPosition = -oSpan.offsetLeft + "px "+ -oSpan.offsetTop +"px";
+			 
+	    }
+	}
+	
+	
+	
+	var iNow = 0;
+	
+	oDiv.onclick = function(){
+		
+		var aSpan = oDiv.children;
+		for(var i = 0; i < aSpan.length; i++){
+			
+			aSpan[i].style.opacity = 1;
+			aSpan[i].style.transform = "none";
+			aSpan[i].style.transition = "none";
+			aSpan[i].style.backgroundImage = "url(images/image2//"+iNow+".jpg)";
+
+		}
+		
+		iNow++;
+		
+		if(iNow == 3) iNow = 0;
+		
+		oDiv.style.backgroundImage = "url(images/image2//"+iNow+".jpg)";
+		
+		for(var i = 0; i < aSpan.length; i++){
+		     
+			 (function(oSpan){
+				 setTimeout(function(){
+					 oSpan.style.transition = "1s all ease";
+					 oSpan.style.opacity = 0;
+					 
+					 var x = oSpan.offsetWidth/2 + oSpan.offsetLeft - oDiv.offsetWidth/2 ;
+					 var y = oSpan.offsetHeight/2 + oSpan.offsetTop - oDiv.offsetHeight/2 ;
+					 
+					 oSpan.style.transform = "translate("+x+"px,"+y+"px) rotateX("+rnd(0,180)+"deg) " + "rotateY("+rnd(0,180)+"deg)";
+				    
+				 },0);
+				 
+			 })(aSpan[i]);
+		
+		}
+		
+	};
+	
+}
+function rnd(n,m){
+	return parseInt(n + Math.random()*(m-n));
+}
+</script>
+</head>
+
+<body>
+<div id="div1">
+
+</div>
+
+</body>
+</html>

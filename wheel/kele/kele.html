@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>可乐自动循环转圈</title>
+<style type="text/css">
+body{ position:relative;}
+.box{ width:194px; height:336px; position:absolute; overflow:hidden; left:50%; top:50%; margin-top:168px; margin-left:-97px;
+}
+img{position:absolute; top:0; left:0; z-index:999}
+p{ width:1074px; height:280px; background:url(images/coke-label.jpg); position:absolute; top:10px; left:0; animation:ball linear 5s infinite;}
+@keyframes ball{
+	0%{left:0;}
+	100%{left:-537px;}			
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+ <img src="images/coke-can.png" />
+ <p></p>
+
+</div>
+</body>
+</html>

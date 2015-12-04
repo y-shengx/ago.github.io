@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>变形</title>
+<style type="text/css">
+* {	margin: 0;	padding: 0;}
+.clear {clear: both;}
+body{ background:#333;}
+ul {list-style: none;}
+.menu {margin: 200px auto;	width: 950px;font-family: arial;}
+.menu li {float:left; -webkit-box-shadow:0 0 200px #FFF;}
+.menu ul li{
+	color: #fff;
+	margin: 0 10px;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 65px;
+	padding: 10px 5px;
+	text-shadow: 0 1px 1px #686868;
+	text-decoration: none;
+}
+.menu ul li.translate{background: #4e9f9d; 
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-ms-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+}
+.menu ul li.translate:hover{
+	-webkit-transform: translate(100px,100px) rotate(360deg) scale(1.5);
+	-moz-transform: translate(100px,100px) rotate(360deg) scale(1.5);
+	-ms-transform: translate(100px,100px) rotate(360deg) scale(1.5);
+	-o-transform: translate(100px,100px) rotate(360deg) scale(1.5);
+	transform: translate(100px,100px) rotate(360deg) scale(1.5);
+
+}
+
+
+
+
+
+
+
+.menu ul li.translate-x{background: #4e9f5d; transition:2s;}
+.menu ul li.translate-x:hover{transform:translateX(100px)}
+
+.menu ul li.translate-y{background: #7c9f4e; transition:2s;}
+.menu ul li.translate-y:hover{transform:translateY(100px)}
+
+.menu ul li.rotate{background: #dc3838; transition:2s}
+.menu ul li.rotate:hover{transform:rotate(360deg); border-radius:25px;}
+
+.menu ul li.scale{background: #384fdc; transtion:2s;}
+.menu ul li.scale:hover{transform:scale(1.5)}
+
+.menu ul li.scale-x{background: #387edc; transtion:2s;}
+.menu ul li.scale-x:hover{transform:scaleX(1.5)}
+
+.menu ul li.scale-y{background: #38a4dc; transtion:2s;}
+.menu ul li.scale-y:hover{transform:scaleY(1.5)}
+
+.menu ul li.skew{background: #dd5500; transtion:2s;}
+.menu ul li.skew:hover{transform:skew(20deg,20deg)}
+
+.menu ul li.skew-x{	background: #dd8c00; transition:1s}
+.menu ul li.skew-x:hover{transform:skewX(5deg)}
+
+.menu ul li.skew-y{	background: #ddc000; transition:1s;}
+.menu ul li.skew-y:hover{transform:skewY(30deg)}
+
+</style>
+</head>
+
+<body>
+<div class="menu">
+	<ul>
+		<li class="item translate">Translate</li>
+		<li class="item translate-x">TranslateX</li>
+		<li class="item translate-y">TranslateY</li>
+		<li class="item rotate">Rotate</li>
+		<li class="item scale">Scale</li>
+		<li class="item scale-x">ScaleX</li>
+		<li class="item scale-y">ScaleY</li>
+		<li class="item skew">Skew</li>
+		<li class="item skew-x">SkewX</li>
+		<li class="item skew-y">SkewY</li>
+		<div class="clear"></div>
+	</ul>
+</div>
+</body>
+</html>

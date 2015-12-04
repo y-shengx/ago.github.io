@@ -130,18 +130,22 @@ article{background-size:cover;}
 
 /*第三页开始*/
 .pageThree{background:url(../images/pic3.png) center no-repeat;}
+.pageThree ul{width:970px; height:490px; position:absolute; left:50%; top:50%; margin-left:-480px; margin-top:-240px;}
+.pageThree ul li{width:220px; height:140px; margin:0 20px 20px 0;float:left; border-radius:5px; box-shadow:0 0 5px #fff; overflow:hidden; position:relative; cursor:pointer;}
+.pageThree ul li div.slide{ width:220px; height:32px; position:absolute; left:0; top:-32px; background:#f60; opacity:0.6;}
+.pageThree ul li p{width:220px; text-align:center; color:#FFF; font:16px/32px "微软雅黑"; position:absolute; left:0; top:140px; z-index:9; }
 /*第三页结束*/
 
 /*第四页开始*/
 .pageFour{background:url(../images/pic4.png) center no-repeat; position:relative;}
-.pageFour div#navBox{width:100%; height:500px; position:absolute; left:0; top:50%; margin-top:-250px;}
-.pageFour div#navBox section{width:107px; height:122px; position:absolute;left:0; top:0; background:url(../images/sixbox.png) -10px center no-repeat; border:none; text-align:center; padding-top:56px;font:24px/30px Arial, Helvetica, sans-serif; color:#fff; cursor:pointer; z-index:99;}
-.pageFour div#navBox section:hover{ background:url(../images/sixbox.png) -144px center no-repeat;}
-.pageFour div#navBox section.active{ background:url(../images/sixbox.png) -144px center no-repeat;}
-.pageFour div#navBox section:nth-child(1){left:0; top:0;}
-.pageFour div#navBox section:nth-child(2){left:60px; top:100px;}
-.pageFour div#navBox section:nth-child(3){left:0; top:200px;}
-.pageFour div#navBox section:nth-child(4){left:60px; top:300px;}
+.pageFour div{width:100%; height:500px; position:absolute; left:0; top:50%; margin-top:-250px;}
+.pageFour div section{width:107px; height:122px; position:absolute;left:0; top:0; background:url(../images/sixbox.png) -10px center no-repeat; border:none; text-align:center; padding-top:56px;font:24px/30px Arial, Helvetica, sans-serif; color:#fff; cursor:pointer;}
+.pageFour div section:hover{ background:url(../images/sixbox.png) -144px center no-repeat;}
+.pageFour div section.active{ background:url(../images/sixbox.png) -144px center no-repeat;}
+.pageFour div section:nth-child(1){left:0; top:0;}
+.pageFour div section:nth-child(2){left:60px; top:100px;}
+.pageFour div section:nth-child(3){left:0; top:200px;}
+.pageFour div section:nth-child(4){left:60px; top:300px;}
 .pageFour div#navBox div.active{display:block;}
 .pageFour div#navBox div{width:920px; height:500px; display:none; position:absolute; left:50%; margin-left:-450px;}
 
@@ -184,28 +188,35 @@ article{background-size:cover;}
 	/*第一个div结束*/
 	
 	/*第二个div开始*/
-	aside#inBox{position:absolute; left:50%; top:50%; margin-left:-300px; margin-top:-212px; width:680px; height:435px; overflow:hidden;}
-	aside#inBox #prev{position:absolute;left:0;top:40%;width:30px;height:80px;background:url(../images/roller-prev_09267fb.png) no-repeat;z-index:8;}
-	aside#inBox #next{position:absolute;right:20px;top:40%;width:30px;height:80px;background:url(../images/roller-next_20cf2e4.png) no-repeat;z-index:8;}
+	aside#inBox{position:absolute; left:50%; top:50%; margin-left:-300px; margin-top:-212px; width:660px; height:435px; overflow:hidden;}
+	aside#inBox #prev{position:absolute;left:0;top:30%;width:30px;height:80px;background:url(../images/roller-prev_09267fb.png) no-repeat;z-index:8;}
+	aside#inBox #next{position:absolute;right:0px;top:30%;width:30px;height:80px;background:url(../images/roller-next_20cf2e4.png) no-repeat;z-index:8;}
 	aside#inBox ol{position:absolute; bottom:0; left:0; width:680px; height:75px; z-index:3; margin-left:-10px;}
-	aside#inBox ol li{width:150px; height:75px; float:left; margin:0 10px; opacity:0.7;}
+	aside#inBox ol li{width:150px; height:75px; float:left; margin:0 10px; opacity:0.6;}
 	aside#inBox ol li.active{ opacity:1;}
 	aside#inBox ol li img{width:150px; height:75px;}
 	aside#inBox>#inUl1{position:absolute; left:0; top:0; height:330px;}
-	aside#inBox>#inUl1>li{width:660px; height:330px; margin-top:10px; display:block;}
+	aside#inBox>#inUl1>li{float:left;width:660px; height:330px; margin-top:10px; display:block;}
 	aside#inBox>#inUl1>li img{width:660px; height:330px;}
-	
+	#pic{position:absolute; left:0; top:0; width:660px; height:330px;overflow:hidden;}
 
 	/*第二个div结束*/
 	
 	/*第三个div开始*/
-	.pageFour div#navBox div:nth-child(3):
+	.pageFour div#navBox div:nth-child(4){position:absolute; left:50%; top:50%; margin-left:-300px; margin-top:-212px; width:660px; height:500px; overflow:hidden; border:1px solid #f60;}
+	.pageFour div#navBox  ul.icon{width:400px; height:400px; position:absolute; left:10%; top:50%; margin-top:-180px;}
+	.pageFour div#navBox  ul.icon li{width:88px; height:88px; float:left; margin:0 10px 10px 0; position:relative;}
+	.pageFour div#navBox  ul.icon li img{width:88px; height:88px; transition:1s;}
+	.pageFour div#navBox p.in{ position:absolute; right:0;  top:50%; margin-top:-174px; }
+	.pageFour div#navBox p.in a{ position:absolute; left:30px; bottom:40px; line-height:20px; color:#f60;}
+	.pageFour div#navBox p.in a span{font-size:16px; color:#f60; font-weight:bold;}
+	.pageFour div#navBox p.in a:hover{ cursor:pointer; }
 	/*第三个div结束*/
 	
 	/*第四个div开始*/
 	
 	.pageFour div#navBox div:nth-child(4){transform-style:preserve-3d; position:relative}
-	#app{ position:relative; left:50%; top:50%; margin-left:-60px; margin-top:-136px; width:125px; height:222px;  transform:perspective(200px) rotateX(-25deg) rotateY(0deg); transform-style:preserve-3d;}
+	#app{ position:relative; left:50%; top:50%; margin-left:-60px; margin-top:-136px; width:125px; height:222px;  transform:perspective(800px) rotateX(-25deg) rotateY(0deg); transform-style:preserve-3d;}
 
 	#app li{ position:absolute;left:0;top:0;width:100%; height:100%;transition:1s all ease; transform: rotateY(0deg) translateZ(1px);border-radius:4px; box-shadow:0 0 5px #fff;}
 	/*第四个div结束*/

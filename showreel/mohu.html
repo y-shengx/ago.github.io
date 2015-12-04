@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>css3文字模糊</title>
+<style>
+*{margin:0;padding:0;list-style:none;}
+body{background:#333;height:600px;overflow:hidden;}
+
+ul{width:860px;height:300px;margin:30px auto;padding:18px;background:#333;}
+ul li{float:left;width:250px;height:230px;margin:10px;color:#333;background:#fff;font-size:12px;line-height:16px;padding:5px;transition:all 0.6s ease-in-out; overflow:hidden;}
+.formal{float:left;width:250px;height:230px;margin:10px;color:#333;background:#fff;font-size:12px;line-height:16px;padding:5px;transition:all 0.6s ease-in-out;}
+
+.active{box-shadow:5px 5px 7px rgba(0,0,0,.6);transform:scale(1.2);}
+.dim{text-shadow:0 0 16px rgba(0,0,0,0.8);box-shadow:0 0 10px 20px rgba(204,204,204,.8);transform:scale(0.8);}
+</style>
+<script>
+window.onload = function(){
+	
+   var aLi = document.getElementsByTagName("li");
+   
+   for(var i = 0; i < aLi.length; i++){
+	   aLi[i].onmouseover = function(){
+		   for(var i = 0; i < aLi.length; i++){
+			   aLi[i].className = "dim";
+		   }
+		   this.className = "active";
+	   };
+	   
+	   aLi[i].onmouseout = function(){
+		   for(var i = 0; i < aLi.length; i++){
+			   aLi[i].className = "formal";
+		   }
+	   };
+  }
+	
+};
+</script>
+
+</head>
+
+
+<body>
+<ul>
+   <li>
+      <h3>NBA公布首月西部最佳球员:库里获选</h3><br>
+      <div>库里是勇士创下开赛19连胜纪录的驱动力，他场均31.6分高居联盟得分榜榜首，同时命中94记三分球排在NBA第一。库里在11月份命中的77记三分球也打破了此前由他保持的单月命中三分球纪录（2015年3月命中75记三分）。库里的投篮命中率、三分命中率以及罚球命中率分别高达51.2%、44.5%和94.1%，他5次单场比赛至少得到40分，其中包括一场10月31日对阵鹈鹕时的赛季个人新高53分。<br>
+	
+     </div>
+     </div>
+   </li>
+   <li>
+      <h3>科比宣布退役</h3><br>
+      <div><img src="images/kobi.png" /></div>
+   </div>
+   </li>
+   <li>
+      <h3>NBA公布首月东部最佳球员:乔治获选</h3><br>
+      <div>乔治场均27.2分领衔东部得分榜，并排在联盟得分榜第四位，帮助步行者在0胜3负的开局之后，赢下了接下来13场比赛中的11场。此外，乔治在场均35.6分钟的出场时间内还能贡献8.1篮板4.4助攻以及1.56次抢断。他命中的51记三分球排在东部第二，联盟并列第三。乔治在11月结束前已经连续12场比赛单场得到20分以上，这也是他职业生涯最长的纪录，这其中包括一场11月24日对阵奇才时的个人赛季最高分40分，同时也是乔治职业生涯的第二次40+，帮助步行者以123-106痛击奇才。</div>
+   </div>
+   </li>
+</ul>
+
+</body>
+</html>

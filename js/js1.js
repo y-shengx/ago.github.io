@@ -12,11 +12,14 @@ function setH(){
 		
 	};
 	
-	oMain.style.top = n*aArticle[0].offsetTop + "px";
+	oMain.style.top = n*aArticle[0].offsetheight + "px";
 	
 }
+var ClientH = 0;
+var ClientW = 0;
 var n = 0;
 window.onresize = setH;
+
 window.onload = function()
 {
 	var oNav = document.getElementById('LeftNav');
@@ -25,8 +28,10 @@ window.onload = function()
 	var oUl1 = document.getElementById('ul1');
 	var aLi = oUl1.children;
 	
-	var ClientH = document.documentElement.clientHeight;
-	var ClientW = document.documentElement.clientWidth;
+	ClientH = document.documentElement.clientHeight;
+    ClientW = document.documentElement.clientWidth;
+    
+	setH();
 	//var Client=document.documentElement.scrollTop||document.body.scroll
 	
 	//alert(ClientH);
@@ -218,14 +223,17 @@ window.onload = function()
 	var aLiApp = oApp.children;
 	var len = aLiApp.length;
 	var q = len - 1;
-	var timer = null;
-	timer = setInterval(function(){
+	var timer1 = null;
+	
+	
+	timer1 = setInterval(function(){
+		
 		
 		aLiApp[q].style.transform = " rotateY("+360/len*q+"deg) translateZ(300px)";
 		
 		q--;
 		if(q == -1){
-			clearInterval(timer);
+			clearInterval(timer1);
 		}	
 	},30);
 	
@@ -304,88 +312,11 @@ window.onload = function()
 	}
 	//3d旋转事件结束
 	
-	/*//图标临摹无缝滚动事件开始
-	var oInBox=document.getElementById('inBox');
+	iconWheel();
 	
-    var oInUl1=document.getElementById('inUl1');
 	
-    var oOl=document.getElementById('ol1');
+	  
 	
-    var oPrev=document.getElementById('prev');
-    var oNext=document.getElementById('next');
-	
-    var aHead=oOl.getElementsByTagName('li');
-    var aBody=oInUl1.getElementsByTagName('li');
-    var now=0;
-    //alert('a')
-    oInUl1.innerHTML+=oInUl1.innerHTML;
-    oInUl1.style.width=oInUl1.children[0].offsetWidth*oInUl1.children.length+'px';
-   
-    for(var i=0;i<aHead.length;i++){
-	   (function(index){
-		   aHead[i].onmouseover=function(){
-			   now=index;
-			   cao();
-		   };
-		})(i);   
-    }
-   
-    var timer=setInterval(function(){
-	       oNext.onclick();
-	   },2000);
-   
-    oNext.onclick=function(){
-	   if(!bReady) return;
-	   next();   
-    };
-    oPrev.onclick=function(){
-	   //now--;
-	   //if(now<0) now=aHead.length-1;
-	   if(!bReady) return; 
-	   if(now==0){
-		  now=aHead.length-1;
-		  oInUl1.style.left=-oInUl1.offsetWidth/2+'px';
-	   }else{
-		   now--;
-	   }
-	   cao(); 
-    };
-    oInBox.onmouseover=function(){
-	    clearInterval(timer);
-    };
-    oInBox.onmouseout=function(){
-	   timer=setInterval(function(){
-	       oNext.onclick();
-	   },2000);
-    };
-   
-    function next(){
-	   now++;
-	   //if(now>=aHead.length) now=0;
-	   cao();
-    }
-    function cao(){
-	   for(var i=0;i<aHead.length;i++){
-		   aHead[i].className='';
-	   }
-	   if(now==aHead.length){
-		   aHead[0].className='active';
-	   }else{
-		   aHead[now].className='active';
-	   }
-	   
-	   ready=false;
-	   
-	   move(oInUl1,{left:-now*oInUl1.children[0].offsetWidth},{time:1000,fn:function(){
-		        ready=true;
-		        if(now==aHead.length){
-					oInUl1.style.left=0;
-					now=0;
-			    }
-				
-	   }});
-    }
-	//图标临摹无缝滚动事件结束*/
 
 };
 	
