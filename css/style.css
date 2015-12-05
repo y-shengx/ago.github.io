@@ -19,11 +19,11 @@ header ul li:hover{ cursor:pointer;}
 /*左边nav开始*/
 
 /*主体部分开始*/
-.content_box{position:relative;width:100%;height:665px;overflow:hidden; z-index:1; }
+.content_box{position:relative;width:100%;height:1242px;overflow:hidden; z-index:1; }
 #Main{position:absolute; left:0; top:0; width:100%;}
 article{background-size:cover;}
 /*第一页开始*/
-.pageOne{background:url(../images/pic1.jpg) center no-repeat; position:relative;}
+.pageOne{background:url(../images/pic1.jpg) center no-repeat; position:relative; background-size:cover;}
 .pageOne ul{ width:620px; height:170px; position:absolute; left:50%; top:50%; margin-left:-310px; margin-top:-80px;}
 .pageOne li.pic1{position:absolute; left:0; top:0;
 -webkit-animation: pic1 2s 1;
@@ -101,7 +101,7 @@ article{background-size:cover;}
 /*第一页结束*/
 
 /*第二页开始*/
-.pageTwo{background:url(../images/pic2.jpg) center no-repeat; position:relative;}
+.pageTwo{background:url(../images/pic2.jpg) center no-repeat; position:relative; background-size:contain;  background-size:100% 100%;}
 .pageTwo section{width:1100px; height:540px; position:absolute; left:50%; top:50%; margin-left:-550px; margin-top:-270px;}
 .pageTwo section .round1{width:200px; height:200px; background:url(../images/jn.png) no-repeat; position:absolute; left:50%; top:50%; margin-left:-40px; margin-top:-100px;}
 .pageTwo section .round1 p{ font:bold 36px/36px Arial, Helvetica, sans-serif; color:#FFF; position:absolute; left:30px; top:50px;}
@@ -129,7 +129,7 @@ article{background-size:cover;}
 /*第二页结束*/
 
 /*第三页开始*/
-.pageThree{background:url(../images/pic3.png) center no-repeat;}
+.pageThree{background:url(../images/pic3.png) center no-repeat; background-size:cover;}
 .pageThree ul{width:970px; height:490px; position:absolute; left:50%; top:50%; margin-left:-480px; margin-top:-240px;}
 .pageThree ul li{width:220px; height:140px; margin:0 20px 20px 0;float:left; border-radius:5px; box-shadow:0 0 5px #fff; overflow:hidden; position:relative; cursor:pointer;}
 .pageThree ul li div.slide{ width:220px; height:32px; position:absolute; left:0; top:-32px; background:#f60; opacity:0.6;}
@@ -137,7 +137,7 @@ article{background-size:cover;}
 /*第三页结束*/
 
 /*第四页开始*/
-.pageFour{background:url(../images/pic4.png) center no-repeat; position:relative;}
+.pageFour{background:url(../images/pic4.png) center no-repeat; position:relative; background-size:cover;}
 .pageFour div{width:100%; height:500px; position:absolute; left:0; top:50%; margin-top:-250px;}
 .pageFour div section{width:107px; height:122px; position:absolute;left:0; top:0; background:url(../images/sixbox.png) -10px center no-repeat; border:none; text-align:center; padding-top:56px;font:24px/30px Arial, Helvetica, sans-serif; color:#fff; cursor:pointer;}
 .pageFour div section:hover{ background:url(../images/sixbox.png) -144px center no-repeat;}
@@ -223,7 +223,7 @@ article{background-size:cover;}
 /*第四页结束*/
 
 /*第五页开始*/
-.pageFive{background:url(../images/pic5.png) center no-repeat; position:relative;}
+.pageFive{background:url(../images/pic5.png) center no-repeat; position:relative; background-size:cover;}
 .mpBox{width:540px; height:324px; position:absolute; left:50%; top:50%; margin-left:-270px; margin-top:-162px; border-radius:10px; background:url(../images/mingp.png) center center no-repeat;
 -webkit-animation:mpBox 2s infinite;
 	}
